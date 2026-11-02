@@ -210,3 +210,9 @@ Jsou na začátku `nasobilka.py`:
 | `REFIT_KAZDYCH`  | 20      | jak často se GMM přefituje                |
 | `MIN_ROZPTYL`    | 0.01    | spodní mez rozptylu složky (log prostor)  |
 | `MIN_ODSTUP`     | 0.3     | minimální odstup středů shluků            |
+
+## Webová verze
+
+Aplikace jde spustit i v prohlížeči (Pyodide + xterm.js), viz README
+v kořeni repa. Místo `--zak` se jméno žáka zadává v terminálu při startu.
+Stav se ukládá do `localStorage` prohlížeče, ne do souboru.

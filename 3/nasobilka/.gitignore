@@ -1,7 +1,2 @@
 # stav žáků
 zak_*.json
-nasobilka_stav.json
-
-# Python artefakty
-__pycache__/
-*.py[cod]

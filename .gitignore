@@ -1,0 +1,10 @@
+# sestavená webová verze (python3 web/build.py)
+dist/
+
+# lokální kopie knihoven (python3 web/dev.py)
+web/vendor/
+
+# Python a Node artefakty
+__pycache__/
+*.py[cod]
+node_modules/

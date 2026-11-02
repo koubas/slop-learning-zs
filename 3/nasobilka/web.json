@@ -1,0 +1,13 @@
+{
+  "nazev": "Násobilka",
+  "popis": "Trenažér malé násobilky do 10",
+  "spoustec": "nasobilka.py",
+  "dotaz": {
+    "text": "Jméno žáka",
+    "seznam": "Uložení žáci",
+    "prazdny": "zatím žádní",
+    "argument": "--zak",
+    "vychozi": "default",
+    "data": "zak_{}.json"
+  }
+}
