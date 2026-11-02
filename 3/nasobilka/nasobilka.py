@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Procvičování násobilky do 10 v terminálu.
 
-Ovládání: učitel po přečtení příkladu stiskne Enter (spustí čas), žák napíše
-výsledek a potvrdí Enterem. Dvakrát Esc = konec a uložení stavu.
+Ovládání (celé obsluhuje učitel, žák jen odpovídá nahlas): učitel přečte
+příklad a stiskne Enter (spustí čas), jakmile žák řekne výsledek, učitel ho
+napíše a potvrdí Enterem. Dvakrát Esc = konec a uložení stavu.
 
 Plánování: každý příklad má interval v počtu příkladů, po kterém přijde znovu.
 Chyba interval vrátí na INTERVAL_CHYBA, správná odpověď ho vynásobí podle
 toho, jak moc příklad vypadá „zapamatovaný“. To se odhaduje směsí dvou
-normálních rozdělení (GMM) na logaritmu času do první napsané číslice:
+normálních rozdělení (GMM) na logaritmu času do první napsané číslice
+(≈ okamžik, kdy žák odpověď vyslovil):
 rychlá složka = vybavuje si z paměti, pomalá = počítá.
 """
 
@@ -398,9 +400,9 @@ def hlavni(okno, stav, sezeni):
         if esc_ceka:
             napoveda = "Stiskni Esc ještě jednou pro ukončení"
         elif zacatek is None:
-            napoveda = "Enter = spustit čas (učitel), 2× Esc = konec"
+            napoveda = "přečti příklad, Enter = spustit čas, 2× Esc = konec"
         else:
-            napoveda = "Enter = potvrdit, 2× Esc = konec"
+            napoveda = "napiš, co žák řekl, Enter = potvrdit, 2× Esc = konec"
         stred(okno, vyska - 2, napoveda, curses.color_pair(3) if esc_ceka or zacatek is None else curses.A_DIM)
         okno.refresh()
 

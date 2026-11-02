@@ -22,7 +22,10 @@ takže by nemělo obsahovat `/`.
 1. Úvodní obrazovka: **Enter** spustí odpočet 3… 2… 1… START!
 2. Zobrazí se příklad. Čas zatím neběží.
 3. Učitel příklad přečte a stiskne **Enter**: čas běží od 0.
-4. Žák napíše výsledek (Backspace opravuje) a potvrdí **Enterem**.
+4. Žák řekne výsledek nahlas a učitel ho hned napíše (Backspace opravuje)
+   a potvrdí **Enterem**.
+
+Klávesnici obsluhuje jen učitel, žák nic nepíše.
 5. **2× Esc** kdykoli ukončí aplikaci, uloží stav do `zak_<jméno>.json`
    v aktuálním adresáři a vypíše závěrečné statistiky.
 
@@ -36,8 +39,11 @@ Eviduje se všech 100 příkladů `1×1` až `10×10` a **záleží na pořadí*
 ## Měření času
 
 Měří se doba od Enteru učitele do **první napsané číslice**, ne do potvrzení.
-Doba psaní (dvouciferný výsledek se píše déle než jednociferný) tak
-nezkresluje měření a čas odpovídá tomu, jak rychle si žák výsledek vybavil.
+První číslice odpovídá okamžiku, kdy žák výsledek vyslovil. Doba, kterou učitel
+stráví psaním zbytku čísla a potvrzováním, se tak do měření nezapočítá.
+Čas proto odpovídá tomu, jak rychle si žák výsledek vybavil. Obsahuje jen malou
+a zhruba stálou reakci učitele, kterou model GMM vstřebá (posune oba shluky
+stejně).
 
 ## Učební metoda: odkládání o počet příkladů
 
