@@ -66,7 +66,7 @@ ROZCESTNIK = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>slop-learning-zs</title>
+<title>Procvičování pro ZŠ</title>
 <link rel="icon" href="data:,">
 <style>
   :root {{ color-scheme: light dark; --bg: #ffffff; --fg: #1a1a1a; --muted: #666666; --link: #0b5fff; }}
@@ -81,7 +81,7 @@ ROZCESTNIK = """<!doctype html>
 </style>
 </head>
 <body>
-<h1>slop-learning-zs</h1>
+<h1>Procvičování pro ZŠ</h1>
 <p class="popis">Aplikace na procvičování učiva ZŠ.</p>
 {obsah}
 </body>

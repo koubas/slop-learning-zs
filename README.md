@@ -27,6 +27,10 @@ python3 web/build.py
 python3 -m http.server -d dist
 ```
 
+Veřejná verze: <https://koubas.github.io/slop-learning-zs/>. Sestavuje ji
+a nasazuje workflow `.github/workflows/pages.yml` při každém pushi do `main`
+(nebo ručně přes *Actions → GitHub Pages → Run workflow*).
+
 ### Lokální vývoj bez internetu
 
 ```
